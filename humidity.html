@@ -38,17 +38,20 @@
     </nav>
 
     <div class = "container">
-        <div class="row">
+        <div class="row">                          
             <div class="col-md-8">
                 <div class="panel panel-default">
                     <div class="panel-body">
 
-                    <h2>Summary: Latitude Analysis Dashboard</h2>
-                    <hr>
-                    <img class="first image" img style="float: left; margin: 0px 15px 15px 0px;" src="Latitude_vs_temperature.png" alt="first image" >
-                    <p class = "text">The purpose of this project was to analyzed how weather changes as you get closer to the equator. To accomplished this analysis, I first pulled data from the OpenWeatherMap API to assemble a dataset on over 180 cities. <br> 
-                        <br> 
-                    After assembling the dataset, I used Matplotlib to plot various aspects of the Weather vs. Latitude. Factors I looked at included: Cloudiness, Wind Speed, Temperature and Humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+                        <h2>Humidity</h2>
+                        <hr>
+                        <img class="humidity image" mg style="float: left; margin: 0px 15px 15px 0px;" src="Latitude_vs_Humidity.png" alt="humidity image" >
+                        <p>Although the relationship between Humidity and the distance from the equator is not very strong, I can see from the sample that locations in the southern hemisphere tend to be more humid since all of the examples (except for 1) have over 39% Humidity. <br> 
+                            <br> 
+                            This behavior is different in the northern hemisphere as you will have more locations falling under 39% humidity.<br> 
+                            <br> 
+
+                            To further investigate the possibility of a relationship, I will need to increase the sample size and analyze a similar count of locations the in southern and northern hemisphere. </p>
                     <br>        
                     </div>
                 </div>
@@ -59,7 +62,7 @@
                             <h2>Visualizations</h2>
                             <hr>
 
-                            <div class="row" >
+                            <div class="row">
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="temperature.html"><img class = "img img-responsive" src="Latitude_vs_temperature.png" style="width:100%" alt=""></a></div>
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="humidity.html"><img class = "img img-responsive" src="Latitude_vs_Humidity.png" style="width:100%" alt=""></a></div>
                             </div>
@@ -69,7 +72,8 @@
                             </div>
                                 
                         </div>
-                </div>     
+                
+                    </div>     
             </div>    
     </div>
 </body>
